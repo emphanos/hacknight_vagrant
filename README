@@ -1,6 +1,7 @@
 Straighten out Vagrantfile and puppet
     Upgrade ruby
     restart postgis
+    Reverted to clone of ruby module instead of using git submodule 
 
 Shotgun - restart on every request
 Tux - Sinatra console
