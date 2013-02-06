@@ -16,7 +16,8 @@ Vagrant::Config.run do |config|
   # Share an additional folder to the guest VM. The first argument is
   # an identifier, the second is the path on the guest to mount the
   # folder, and the third is the path on the host to the actual folder.
-  config.vm.share_folder "geo-spatial-analytics-project", "/home/vagrant/geo_spatial_analytics", "geo_spatial_analytics"
+
+  # config.vm.share_folder "some_identifier", "/home/vagrant/your_project_name", "relative_path_to_your_project"
 
   config.vm.provision :puppet do |puppet|
    puppet.module_path = "modules"
