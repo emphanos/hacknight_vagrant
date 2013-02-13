@@ -1,6 +1,6 @@
 class post_gis {
     exec { 'restart_postgres':
-        command => '/usr/bin/touch /etc/postgresql/8.4/main/pg_hba.conf',
+        command => '/etc/init.d/postgresql-8.4 restart',
         require => Service['postgresql-8.4'],
     }
 
