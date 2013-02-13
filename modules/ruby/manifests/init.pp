@@ -19,7 +19,9 @@ define rubyinstall($version = $title) {
     "curl":
       ensure => present;
     "rake":
-      ensure => present
+      ensure => present,
+      require => Exec['apt-get update']
+
   }
 
   exec { "ruby-build-install":
